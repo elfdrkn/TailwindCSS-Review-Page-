@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS Review Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="navbar" class="sticky top-0 left-0 bg-white z-50">
+        <nav class="container mx-auto py-3 px-12 ">
+            <!-- Flex container -->
+            <div class="flex items-start justify-between">
+              <!-- Menu Items -->
+              <div class="space-x-6 flex">
+                <a href="#" class="text-black :text-purple-500 hover:underline">Link</a>
+                <a href="#" class="text-black hover:text-purple-500 hover:underline">Link</a>
+                <a href="#" class="text-black hover:text-purple-500 hover:underline">Link</a>
+              </div>
+              <!-- Icon -->
+              <div class="flex items-center p-2 text-2xl text-purple-500">
+                <i class="fa fa-home"></i>
+              </div>
+              <!-- Search Button-->
+              <div class="flex items-center border border-gray-300 rounded-md p-1">
+                <!-- Search Icon & Text -->
+                <i class="fa fa-search items-end"></i>
+                <!-- Log In Button -->
+                <input type="text" placeholder="Search..." class="outline-none flex-grow px-2 py-1"/>
+                <button class="text-white p-2"></button>
+                <a href="#"
+                class="p-3 px-6 pt-2 text-white 
+                bg-purple-700">Log In</a>
+              </div>
+              
+                
+            </div>
+        <!-- Section 1 -->
+        <section class="bg-gray-300 mt-4">
+            <!-- Flex Container -->
+            <div class="container flex flex-col items-center justify-between px-6 py-24  space-y-12">
+                <h2 class="text-5xl font-bold text-center text-black"> 
+                Quisquam necessita<br> vel<span class="text-purple-500">laborum<br> doloribus</span>delectus</h2>
+                <p class="text-black">Cupiditate minima voluptate temporibus quia?<br>Architecto beatae esse ab amet vero eaque explicabo!</p>
+                <!-- Button -->
+                <div>
+                    <a href="#" class="p-3 px-6 pt-2 text-white bg-purple-500 ">Get started</a>
+                    <a href="#" class="p-3 px-6 pt-2 text-black">Learn more</a>
+                </div>
+            </div>
+            </section>
+
+            <!-- Comments Section -->
+            <section class="flex justify-center items-center bg-gray-500">
+            <!-- Flex Container -->
+                <div class="container flex flex-col items-center justify-between bg-white px-6 py-24 space-y-12">
+                <!-- Centered Text-->
+                <div>
+                    <h2 class="text-5xl font-bold text-center text-black"> 
+                        What our customers are saying about us</h2>
+                </div>
+                <!-- First cards section-->
+                <div class="flex space-x-4 mx-10">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4  max-w-sm">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint earum possimus voluptatem sequi soluta qui ea consectetur porro asperiores.</p>
+                        <h1 class="bg-purple-500 text-white text-center py-2 mt-4 rounded-md">Distinctio Animi</h1>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4 max-w-sm">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam debitis assumenda atque eaque asperiores nisi sit praesentium reprehenderit excepturi. Totam.</p>
+                        <h1 class="bg-purple-500 text-white text-center py-2 mt-4 rounded-md">Distinctio Animi</h1>
+                    </div>
+                </div>
+                <!-- Second cards section-->
+                <div class="flex space-x-4 mx-10">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4  max-w-sm">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint earum possimus voluptatem sequi soluta qui ea consectetur porro asperiores.</p>
+                        <h1 class="bg-purple-500 text-white text-center py-2 mt-4 rounded-md">Distinctio Animi</h1>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-4  max-w-sm">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam debitis assumenda atque eaque asperiores nisi sit praesentium reprehenderit excepturi. Totam.</p>
+                        <h1 class="bg-purple-500 text-white text-center py-2 mt-4 rounded-md">Distinctio Animi</h1>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="bg-gray-300">
+                <div class="container flex flex-col items-center justify-between py-24 space-y-12 ">
+                    
+                    <form class="max-w-3xl mx-auto bg-white p-12 rounded-lg shadow-md">
+                    <h1 class="text-3xl font-bold text-black mb-8 text-center">Contact us</h1>  
+                        <div>
+                            <label for="name" class="block my-2">Name</label>
+                            <input type="text" name="text" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block my-2">E-mail</label>
+                            <input type="email" name="text" placeholder="Your email">
+                        </div>
+                        <div>
+                            <label for="message" class="block my-2">Message</label>
+                            <input type="text" name="message" placeholder="Message...">
+                        </div>                   
+                        <!-- Send button -->
+                        <div>
+                            <button type="submit" class="mt-6 bg-purple-700 text-white w-full p-2 rounded-md">Send</button>  
+                        </div>                                          
+                    </form>                                         
+                </div>
+            </section>
+
+            <!-- Footer -->
+             <footer class="bg-gray-300">
+                <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-10
+                mx-auto space-y-8 md:flex-row md:space-y-0 text-black text-sm ml-5">
+                <!-- Contact Links -->
+                    <div>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                    </div>
+                <!-- Social Media Links-->
+                    <div class="flex justify-center space-x-4 mr-8">
+                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500">
+                            <i class="fa fa-instagram text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500">
+                            <i class="fa fa-pinterest text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500">
+                            <i class="fa fa-twitter text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500">
+                            <i class="fa fa-facebook text-white text-xl"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500">
+                            <i class="fa fa-google text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+             </footer>
+
+    
+</body>
+</html>
